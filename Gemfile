@@ -13,7 +13,6 @@ gem "figaro"
 gem "image_processing", "1.9.3"
 gem "jbuilder", "~> 2.7"
 gem "mini_magick", "4.9.5"
-gem "sqlite3"
 gem "net-imap", require: false
 gem "net-pop", require: false
 gem "net-smtp", require: false
@@ -23,6 +22,7 @@ gem "puma", "~> 5.0"
 gem "rails", "~> 6.1.6", ">= 6.1.6.1"
 gem "rails-i18n"
 gem "sass-rails", ">= 6"
+gem "sqlite3"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 5.0"
 

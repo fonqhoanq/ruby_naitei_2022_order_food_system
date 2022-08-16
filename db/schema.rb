@@ -12,66 +12,66 @@
 
 ActiveRecord::Schema.define(version: 2022_08_15_070620) do
 
-  create_table "categories", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "categories", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "detail_orders", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "detail_orders", force: :cascade do |t|
     t.float "price"
     t.integer "quantity"
-    t.bigint "order_id", null: false
-    t.bigint "product_id", null: false
+    t.integer "order_id", null: false
+    t.integer "product_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["order_id"], name: "index_detail_orders_on_order_id"
     t.index ["product_id"], name: "index_detail_orders_on_product_id"
   end
 
-  create_table "orders", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "orders", force: :cascade do |t|
     t.string "user_name"
     t.string "address"
-    t.integer "status"
+    t.integer "status", default: 0
     t.float "total"
     t.string "payment_type"
-    t.bigint "user_id", null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
-  create_table "products", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "products", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.float "price"
     t.integer "quantity"
-    t.bigint "category_id", null: false
+    t.integer "category_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_products_on_category_id"
   end
 
-  create_table "ratings", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "ratings", force: :cascade do |t|
     t.text "content"
     t.integer "star"
-    t.bigint "user_id", null: false
-    t.bigint "product_id", null: false
+    t.integer "user_id", null: false
+    t.integer "product_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["product_id"], name: "index_ratings_on_product_id"
     t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
-  create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.string "password_digest"
     t.string "address"
     t.string "phone_number"
-    t.boolean "activated"
-    t.boolean "admin"
+    t.boolean "activated", default: false
+    t.boolean "admin", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,0 +1,22 @@
+vi:
+  hello: "Xin chào thế giới"
+  base_title: "Hệ thống đặt đồ ăn"
+  layouts:
+    application_admin:
+      heading: "Phía người quản lý"
+  static_pages:
+    home: 
+      heading: "Trang chủ"
+      page: "Trang chủ Static Page"
+      find_me: "Tìm tôi trong app/views/static_pages/home.html.erb"
+      en: "Tiếng Anh"
+      vi: "Tiếng Việt"
+    help: 
+      heading: "Giúp đỡ"
+      page: "Trang giúp đỡ Static Page"
+      find_me: "Tìm tôi trong app/views/static_pages/help.html.erb"
+  admin:
+    static_pages:
+      index: 
+        heading: "Index"
+        page: "Trang tĩnh bởi phía Admin"

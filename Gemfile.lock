@@ -156,9 +156,9 @@ GEM
     method_source (1.0.0)
     mini_magick (4.9.5)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.0)
     minitest (5.16.2)
     msgpack (1.5.4)
-    mysql2 (0.5.4)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -174,7 +174,8 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.8-x86_64-linux)
+    nokogiri (1.13.8)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     pagy (5.10.1)
       activesupport
@@ -296,6 +297,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    sqlite3 (1.4.4)
     strscan (3.0.4)
     thor (1.2.1)
     tilt (2.0.11)
@@ -344,7 +346,6 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.3)
   mini_magick (= 4.9.5)
-  mysql2 (~> 0.5.3)
   net-imap
   net-pop
   net-smtp
@@ -362,6 +363,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   spring
+  sqlite3
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)

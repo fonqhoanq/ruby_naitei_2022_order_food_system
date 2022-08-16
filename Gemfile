@@ -13,7 +13,7 @@ gem "figaro"
 gem "image_processing", "1.9.3"
 gem "jbuilder", "~> 2.7"
 gem "mini_magick", "4.9.5"
-gem "mysql2", "~> 0.5.3"
+gem "sqlite3"
 gem "net-imap", require: false
 gem "net-pop", require: false
 gem "net-smtp", require: false

@@ -20,3 +20,23 @@ vi:
       index: 
         heading: "Index"
         page: "Trang tĩnh bởi phía Admin"
+  users:
+    new:
+      heading: "Đăng ký"
+      form:
+        name: "Tên"
+        address: "Địa chỉ"
+        phone_number: "Số điện thoại"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirm: "Xác nhận mật khẩu"
+        btn_submit: "Tạo tài khoản"
+    show:
+      user_not_found: "Không tìm thấy người dùng"
+    create:
+      signup_success: "Chào mừng đến với Ứng dụng đặt đồ ăn!"
+      signup_fail: "Có lỗi xảy ra. Vui lòng thử lại."
+  shared:
+    error_messages:
+      intro: "Biểu mẫu có"
+      error: "Lỗi"

@@ -20,3 +20,23 @@ en:
       index: 
         heading: "Index"
         page: "Static page by Admin site"
+  users:
+    new:
+      heading: "Sign up"
+      form:
+        name: "Name"
+        address: "Address"
+        phone_number: "Phone number"
+        email: "Email"
+        password: "Password"
+        password_confirm: "Password confirmation"
+        btn_submit: "Create my account"
+    show:
+      user_not_found: "User not found"
+    create:
+      signup_success: "Wellcome to the Order Food System"
+      signup_fail: "Errors occurred. Please try again."
+  shared:
+    error_messages:
+      intro: "The form contains"
+      error: "Error"

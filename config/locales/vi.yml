@@ -52,6 +52,11 @@ vi:
         btn_submit: "Tạo tài khoản"
     show:
       user_not_found: "Không tìm thấy người dùng"
+      name: "Tên: "
+      address: "Địa chỉ: "
+      phone_number: "Số điện thoại: "
+      email: "Email: "
+      page: "Thông tin người dùng"
     create:
       signup_success: "Chào mừng đến với Ứng dụng đặt đồ ăn!"
       signup_fail: "Có lỗi xảy ra. Vui lòng thử lại."
@@ -81,6 +86,7 @@ vi:
       profile: "Hồ sơ"
       settings: "Cài đặt"
     footer:
+      top: "Giao hàng & Mang theo đơn hàng"
       about: "Giới thiệu"
       contact: "Liên hệ"
       history: "Lịch sử"

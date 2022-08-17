@@ -3,7 +3,7 @@
     <!-- top footer statrs -->
     <div class="row top-footer">
         <div class="col-xs-12 col-sm-3 footer-logo-block color-gray">
-            <a href="#"> <img src="assets/food-picky-logo.png" alt="Footer logo"> </a> <span>Order Delivery &amp; Take-Out </span> 
+          <%= link_to image_tag("food-picky-logo.png"), root_path%> <span><%= t(".top") %></span> 
         </div>
         <div class="col-xs-12 col-sm-2 about color-gray">
             <h5><%= t(".about") %></h5>
@@ -50,19 +50,19 @@
           <h5><%= t(".pay_option")%></h5>
           <ul>
             <li>
-              <a href="#"> <img src="assets/paypal.png" alt="Paypal"> </a>
+              <a href="#"> <%= image_tag("paypal.png") %> </a>
             </li>
             <li>
-              <a href="#"> <img src="assets/mastercard.png" alt="Mastercard"> </a>
+              <a href="#"><%= image_tag("mastercard.png") %></a>
             </li>
             <li>
-              <a href="#"> <img src="assets/maestro.png" alt="Maestro"> </a>
+              <a href="#"><%= image_tag("maestro.png") %></a>
             </li>
             <li>
-              <a href="#"> <img src="assets/stripe.png" alt="Stripe"> </a>
+              <a href="#"><%= image_tag("stripe.png") %></a>
             </li>
             <li>
-              <a href="#"> <img src="assets/bitcoin.png" alt="Bitcoin"> </a>
+              <a href="#"><%= image_tag("bitcoin.png") %></a>
             </li>
           </ul>
         </div>

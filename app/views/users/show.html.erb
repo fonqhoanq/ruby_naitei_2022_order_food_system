@@ -1,11 +1,25 @@
 <% provide(:title, @user.name) %>
+<h1 class="profile-page"><%= t(".page") %></h1>
 <div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
+  <section class="inner-page-hero bg-image">
+    <div class="profile">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 profile-img">
+          <div class="image-wrap">
+            <figure><%= gravatar_for @user %></figure>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 profile-desc">
+            <div class="pull-left right-text white-txt">
+              <h2><%=t(".name")%><%= @user.name %></h2>
+              <ul class="nav nav-inline">
+                <p><li class="nav-item"><%=t(".address")%><%= @user.address %></li></p>
+                <p><li class="nav-item"><%=t(".phone_number")%><%= @user.phone_number %></li></p>
+                <p><li class="nav-item"><%=t(".email")%><%= @user.email %></li></p></p>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

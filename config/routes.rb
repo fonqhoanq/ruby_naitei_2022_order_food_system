@@ -3,8 +3,15 @@ Rails.application.routes.draw do
     root "static_pages#home"
     get "static_pages/home"
     get "static_pages/help"
+    get "sessions/new"
+    get "sessions/create"
+    get "sessions/destroy"
     get "/signup", to: "users#new"
     post "/signup", to: "users#create"
+    get "/login", to: "sessions#new"
+    post "/login", to: "sessions#create"
+    get "/logout", to: "sessions#destroy"
+    
     resources :users, only: %i(new create show)
     namespace :admin do
       root to: "static_pages#index"

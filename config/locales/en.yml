@@ -36,6 +36,15 @@ en:
     create:
       signup_success: "Wellcome to the Order Food System"
       signup_fail: "Errors occurred. Please try again."
+  sessions:
+    new:
+      login: "Log in"
+      email: "Email"
+      password: "Password"
+      signup: "Sign up now!"
+      new_user: "New user?"
+    create:
+      invalid_email_password_combination: "Invalid email/password combination"
   shared:
     error_messages:
       intro: "The form contains"

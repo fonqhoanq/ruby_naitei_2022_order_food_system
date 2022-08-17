@@ -4,6 +4,25 @@ vi:
   layouts:
     application_admin:
       heading: "Phía người quản lý"
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Hỗ  trợ"
+      users: "Người dùng"
+      login: "Đăng nhập"
+      logout: "Đăng xuất"
+      profile: "Hồ sơ"
+      account: "Tài khoản"
+      settings: "Cài đặt"
+      app: "Sample App"
+    footer:
+      about: "Giới thiệu"
+      contact: "Liên hệ"
+      news: "Tin tức"
+      by: "viết bởi"
+      author: "Michael Hartl"
+      tutor: "Hướng dẫn Ruby on Rails"
+      book: "Huong dan Ruby on Rails"
   static_pages:
     home: 
       heading: "Trang chủ"
@@ -36,6 +55,15 @@ vi:
     create:
       signup_success: "Chào mừng đến với Ứng dụng đặt đồ ăn!"
       signup_fail: "Có lỗi xảy ra. Vui lòng thử lại."
+  sessions:
+    new:
+      login: "Đăng nhập"
+      email: "Địa chỉ email"
+      password: "Password"
+      signup: "Đăng ký ngay!"
+      new_user: "Người dùng mới?"
+    create:
+      invalid_email_password_combination: "Email và password không trùng khớp"
   shared:
     error_messages:
       intro: "Biểu mẫu có"

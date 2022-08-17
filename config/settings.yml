@@ -1,0 +1,11 @@
+regex:
+  email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  phone_number_regex: !ruby/regexp /\A[+-]?\d+\z/
+valid:
+  name_max_len: 50
+  email_max_len: 255
+  password_min_len: 6
+  password_max_len: 20
+  address_max_len: 255
+  phone_number_min_len: 10
+  phone_number_max_len: 15

@@ -1,6 +1,6 @@
 class Product < ApplicationRecord
   PRODUCT_ATTRS = [:name, :description, :price, :quantity, :category_id,
-                   :images].freeze
+                   :image].freeze
   belongs_to :category
   mount_uploader :image, ImageUploader
   validates :name, presence: true,

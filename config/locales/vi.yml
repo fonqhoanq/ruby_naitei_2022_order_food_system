@@ -63,6 +63,15 @@ vi:
       product:
         edit: "Chỉnh sửa"
         delete: "Xóa"
+      create:
+        success: "Thêm sản phẩm mới thành công"
+        error: "Thêm sản phẩm mới thất bại"
+      update:
+        success: "Cập nhật thành công"
+        failed: "Cập nhật thất bại"
+      edit:
+        editing: "Chỉnh sửa sản phẩm"
+        btn_submit: "Submit"
     shared:
       error_messages:
         intro: "Biểu mẫu có"

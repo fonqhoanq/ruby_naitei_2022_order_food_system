@@ -33,6 +33,11 @@ en:
         btn_submit: "Create my account"
     show:
       user_not_found: "User not found"
+      name: "Name: "
+      address: "Address: "
+      phone_number: "Phone number: "
+      email: "Email: "
+      page: "Profile"
     create:
       signup_success: "Wellcome to the Order Food System"
       signup_fail: "Errors occurred. Please try again."
@@ -62,6 +67,7 @@ en:
       profile: "Profile"
       settings: "Settings"
     footer:
+      top: "Order Delivery &amp; Take-Out"
       about: "About"
       contact: "Contact"
       history: "History"

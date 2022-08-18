@@ -8,9 +8,17 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 // require("jquery")
-// import "bootstrap"
-// import "../stylesheets/application"
-
+import "bootstrap"
+import "../stylesheets/application_admin"
+require("jquery")
+require("./js/jquery.min")
+require("./js/tether.min")
+require("./js/bootstrap.min")
+require("./js/animsition.min")
+require("./js/bootstrap-slider.min")
+require("./js/jquery.isotope.min")
+require("./js/headroom")
+require("./js/foodpicky.min")
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()

@@ -55,6 +55,23 @@ vi:
       product:
         edit: "Chỉnh sửa"
         delete: "Xóa"
+      create:
+        success: "Thêm sản phẩm mới thành công"
+        error: "Thêm sản phẩm mới thất bại"
+      update:
+        success: "Cập nhật thành công"
+        failed: "Cập nhật thất bại"
+      edit:
+        editing: "Chỉnh sửa sản phẩm"
+        btn_submit: "Submit"
+      destroy:
+        success: "Xóa sản phẩm thành công"
+        failed: "Xóa sản phẩm thất bại"
+      form_search:
+        name: "Tên SP: "
+        price_from: "Giá từ: "
+        price_to: "Đến"
+        search: "Tìm kiếm"
     shared:
       error_messages:
         intro: "Biểu mẫu có"

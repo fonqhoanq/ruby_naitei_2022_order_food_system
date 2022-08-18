@@ -50,6 +50,19 @@ vi:
         price: "Giá"
         quantity: "Số lượng"
         cate: "Loại sản phẩm"
+      index:
+        new_product: "Sản phẩm mới"
+        id: "ID"
+        name: "Tên sản phẩm"
+        price: "Giá"
+        quantity: "Số lượng"
+        image: "Hình ảnh"
+        created_at: "Thời gian tạo"
+        updated_at: "Cập nhật"
+        actions: "Hành động"
+      product:
+        edit: "Chỉnh sửa"
+        delete: "Xóa"
     shared:
       error_messages:
         intro: "Biểu mẫu có"

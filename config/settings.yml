@@ -15,4 +15,6 @@ product:
   price_format: !ruby/regexp /\A\d+(?:\.\d{0,2})?\z/
   num_min: 0
   num_max: 1000
-
+pagy:
+  items: 20
+date_format: "%Y-%m-%d"

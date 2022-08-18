@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include Pagy::Backend
   include SessionsHelper
   before_action :check_role_user, :set_locale
   private

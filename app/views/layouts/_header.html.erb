@@ -13,14 +13,16 @@
           <% if logged_in? %>
             <li class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <%= t(".account") %>
+                <%= current_user.name %>
               </a>
               <ul class="dropdown-menu">
                 <li><%= link_to t(".profile"), current_user, class:"dropdown-item" %></li>
                 <li>
-                  <%= link_to t(".logout"), logout_path, method: :delete, class:"dropdown-item" %>
+                <%= link_to t(".logout"), logout_path, method: :delete, class:"dropdown-item" %>
                 </li>
               </ul>
+              <li class="nav-item"><%= link_to t(".cart"), carts_path, method: :get, class:"nav-link" %></li>
+              <li class="nav-item custom-control-indicator"><span class="nav-item nav-cart-count"><%= get_cart_count_header %></span></li>
             </li>
           <% else %>
             <li class="nav-item"><%= link_to t(".login"), login_path, class:"nav-link" %></li>

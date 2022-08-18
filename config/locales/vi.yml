@@ -145,6 +145,7 @@ vi:
       settings: "Cài đặt"
       en: "Tiếng Anh"
       vi: "Tiếng Việt"
+      cart: "Giỏ hàng"
     footer:
       top: "Giao hàng & Mang theo đơn hàng"
       about: "Giới thiệu"
@@ -173,3 +174,13 @@ vi:
       phone: "Số điện thoại:"
       add_info: "Thông tin bổ sung"
       add_info_dec: "Tham gia cùng hàng nghìn nhà hàng khác, những người được hưởng lợi từ việc đưa thực đơn của họ trên TakeOff"
+  carts:
+    index: 
+      heading: "Giỏ hàng"
+      cart: "Giỏ hàng"
+      cart_empty: "Giỏ hàng trống"
+      total: "Tổng: "
+      order: "Đặt hàng"
+    add_product:
+      add_to_cart_success: "Thêm sản phẩm vào giỏ hàng thành công"
+      product_not_found: "Không tìm thấy sản phẩm"

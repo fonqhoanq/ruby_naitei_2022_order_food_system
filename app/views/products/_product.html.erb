@@ -4,14 +4,13 @@
     <div class="figure-wrap bg-image" style="background-image: url(<%= product.image.url %>)" >
       <div class="distance"><i class="fa fa-pin"></i>1240m</div>
       <div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
-      <div class="review pull-right"><a href="#">198 reviews</a> </div>
     </div>
     <div class="content">
       <h5><a href="profile.html"><%= product.name %></a></h5>
       <div class="product-name"><%= t(".quantity")%><%= product.quantity %></div>
       <div class="price-btn-block"> <span class="price"><%= number_to_currency(product.price) %></span>
       <% if logged_in? %>
-        <a href="" class="btn theme-btn-dash pull-right"><%= t(".add_cart")%></a>
+        <%= button_to t(".add_cart"), add_product_path(id: product.id), method: :post, class:"btn theme-btn-dash pull-right" %>
       <% end %>
       </div>
     </div>

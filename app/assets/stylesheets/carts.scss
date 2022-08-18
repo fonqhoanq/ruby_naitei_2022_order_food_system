@@ -1,0 +1,78 @@
+// Place all the styles related to the Carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Give+You+Glory);
+/********* Cart part ***********/
+.cart-addon h1 {
+  margin-top: 70px;
+}
+.cart-addon .food-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+  padding: 2px 0 15px;
+}
+.cart-addon .cart-content {
+  margin-top: 50px;
+}
+
+.cart-addon .food-item:last-of-type {
+  border-bottom: none
+}
+
+.cart-addon .food-item .item-img img {
+  max-width: 70px;
+}
+
+.cart-addon .food-item .rest-descr {
+  margin-left: 200px;
+}
+
+.cart-addon .food-item h6 a {
+  font-size: 16px;
+  color: #4d4f56;
+  display: block;
+  margin: 4px 0 0 0;
+  line-height: 20px;
+}
+
+.cart-addon .food-item h6 a:hover{
+  color: #f30;
+  background-color: transparent;
+}
+
+.cart-addon .price {
+  font-weight: 600;
+  margin-top: 15px;
+  display: block;
+  color: #25282b;
+}
+
+.cart-addon .food-item .form-control {
+  margin-top: 8px;
+}
+.theme-btn-dash {
+  border: 2px dashed #f30 !important;
+  background-color: transparent;
+  color: #f30
+}
+.btn-secondary {
+  color: #373a3c;
+  background-color: rgba(252, 251, 249, 0.68);
+  border-color: #eaebeb;
+}
+.theme-btn-dash:hover, .theme-btn, 
+.btn-primary,.btn-primary:hover,
+.theme-btn.btn-lg:hover, .btn-secondary:hover {
+background-color: #f30 !important ;
+color: #fff !important ;
+border: 2px solid #f30 !important ;
+}
+.cart-btn-order {
+  margin: 20px 0;
+}
+.btn-small {
+  width: 16%;
+}
+.restaurant-logo {
+  height: 80px;
+}

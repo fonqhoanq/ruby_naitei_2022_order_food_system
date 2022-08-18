@@ -1,0 +1,38 @@
+<% provide(:title, t(".heading")) %>
+<div class = "container cart-addon" >
+  <h1><%= t ".cart" %></h1>
+  <% unless products.empty? %>
+    <div class="collapse in cart-content">
+      <% products.each do |value| %>
+        <div class="food-item white">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-8">
+              <div class="rest-logo pull-left">
+                  <%= image_tag(value[:product].image.url, class: "restaurant-logo pull-left") if value[:product].image?  %>
+              </div>
+              <!-- end:Logo -->
+              <div class="rest-descr">
+                  <h6><a href="#"><%= value[:product].name %></a></h6>
+                  <p> <%= number_to_currency(value[:product].price) %></p>
+              </div>
+              <!-- end:Description -->
+            </div>
+            <!-- end:col -->
+            <div class="col-xs-12 col-sm-12 col-lg-4 pull-right item-cart-info"> <span class="price pull-left"><%= value[:count] %></span> 
+              <%= button_to "+", plus_product_path(id: value[:product].id), method: :post, class:"btn btn-small btn btn-secondary pull-right" %>
+              <%= button_to "-", minus_product_path(id: value[:product].id), method: :post, class:"btn btn-small btn btn-secondary pull-right" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <span class="price pull-left"><%= t(".total")%></span>
+      <div class="col-xs-12 col-sm-12 col-lg-4 pull-right">
+        <span class="price pull-left"><%= number_to_currency(tottal_price) %></span>
+      </div>
+      <%= button_to t(".order"), root_path, method: :get, class:"btn theme-btn-dash pull-right cart-btn-order" %>
+    </div>
+
+  <% else %>
+    <p ><%= t(".cart_empty") %></p>
+  <% end %>
+</div>

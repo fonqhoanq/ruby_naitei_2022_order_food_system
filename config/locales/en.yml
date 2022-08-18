@@ -83,6 +83,7 @@ en:
       settings: "Settings"
       en: "English"
       vi: "Vietnamese"
+      cart: "Cart"
     footer:
       top: "Order Delivery & Take-Out"
       about: "About"
@@ -111,3 +112,13 @@ en:
       phone: "Phone:"
       add_info: "Addition informations"
       add_info_dec: "Join the thousands of other restaurants who benefit from having their menus on TakeOff"
+  carts:
+    index: 
+      heading: "Cart"
+      cart: "Cart"
+      cart_empty: "Cart empty"
+      total: "Total: "
+      order: "Order"
+    add_product:
+      add_to_cart_success: "Add product to cart successed"
+      product_not_found: "Product not found"

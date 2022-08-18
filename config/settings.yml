@@ -9,3 +9,10 @@ valid:
   address_max_len: 255
   phone_number_min_len: 10
   phone_number_max_len: 15
+product:
+  name_max_length: 50
+  name_min_length: 5
+  price_format: !ruby/regexp /\A\d+(?:\.\d{0,2})?\z/
+  num_min: 0
+  num_max: 1000
+

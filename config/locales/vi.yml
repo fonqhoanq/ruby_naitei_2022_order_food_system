@@ -39,6 +39,21 @@ vi:
       index: 
         heading: "Index"
         page: "Trang tĩnh bởi phía Admin"
+    products:
+      new:
+        title: "Sản Phẩm Mới"
+        heading: "Tạo sản phẩm mới"
+        btn_submit: "Submit"
+      form:
+        name: "Tên sản phâm"
+        des: "Mô tả chi tiết"
+        price: "Giá"
+        quantity: "Số lượng"
+        cate: "Loại sản phẩm"
+    shared:
+      error_messages:
+        intro: "Biểu mẫu có"
+        error: "lỗi"
   users:
     new:
       heading: "Đăng ký"

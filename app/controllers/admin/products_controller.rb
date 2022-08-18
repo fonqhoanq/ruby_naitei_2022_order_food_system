@@ -1,6 +1,6 @@
 class Admin::ProductsController < Admin::BaseController
   def index
-    @pagy, @products = pagy(Product.all.newest, items: Settings.pagy.items)
+    @pagy, @products = pagy Product.all.newest, items: Settings.pagy.items
   end
 
   def new
@@ -11,7 +11,7 @@ class Admin::ProductsController < Admin::BaseController
     @product = Product.new product_params
     if @product.save
       flash[:success] = t ".success"
-      redirect_to new_admin_product_path
+      redirect_to admin_products_path
     else
       flash.now[:error] = t ".error"
       render :new

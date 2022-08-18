@@ -12,7 +12,7 @@ class Admin::ProductsController < Admin::BaseController
     else
       @products = Product.all.newest
     end
-    @pagy, @products = pagy @products, items: Settings.pagy.items
+    @pagy, @products = pagy @products, items: Settings.pagy.item_5
   end
 
   def new

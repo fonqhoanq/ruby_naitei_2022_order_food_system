@@ -1,7 +1,7 @@
 <% provide :title, t(".login") %>
-<h1><%= t(".login") %></h1>
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
+<div class="container user-container">
+  <h1><%= t(".login") %></h1>
+  <div class="row">
     <%= form_for :session, url: login_path do |f| %>
       <%= f.label t ".email" %>
       <%= f.email_field :email, class: "form-control" %>

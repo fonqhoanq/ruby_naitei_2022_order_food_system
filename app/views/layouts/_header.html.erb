@@ -25,6 +25,8 @@
           <% else %>
             <li class="nav-item"><%= link_to t(".login"), login_path, class:"nav-link" %></li>
           <% end %>
+          <li class="nav-item"><%= link_to t(".en"), {locale: :en}, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to t(".vi"), {locale: :vi}, class: "nav-link" %></li>
         </ul>
       </div>
     </div>

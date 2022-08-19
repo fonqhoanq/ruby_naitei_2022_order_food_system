@@ -2,7 +2,7 @@ class Admin::ProductsController < Admin::BaseController
   before_action :find_product_by_id, except: %i(index new create)
 
   def index
-    @pagy, @products = pagy Product.all.newest, items: Settings.pagy.items
+    @pagy, @products = pagy Product.all.newest, items: Settings.pagy.item_9
   end
 
   def new

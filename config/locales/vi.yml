@@ -1,39 +1,31 @@
 vi:
+  number:
+    currency:
+      format:
+        unit: "vnd" 
+        delimiter: ","
+        format: "%n%u"
   hello: "Xin chào thế giới"
   base_title: "Hệ thống đặt đồ ăn"
   layouts:
     application_admin:
       heading: "Phía người quản lý"
-  layouts:
-    header:
-      home: "Trang chủ"
-      help: "Hỗ  trợ"
-      users: "Người dùng"
-      login: "Đăng nhập"
-      logout: "Đăng xuất"
-      profile: "Hồ sơ"
-      account: "Tài khoản"
-      settings: "Cài đặt"
-      app: "Sample App"
-    footer:
-      about: "Giới thiệu"
-      contact: "Liên hệ"
-      news: "Tin tức"
-      by: "viết bởi"
-      author: "Michael Hartl"
-      tutor: "Hướng dẫn Ruby on Rails"
-      book: "Huong dan Ruby on Rails"
   static_pages:
     home: 
       heading: "Trang chủ"
-      page: "Trang chủ Static Page"
-      find_me: "Tìm tôi trong app/views/static_pages/home.html.erb"
-      en: "Tiếng Anh"
-      vi: "Tiếng Việt"
+      top: "Giao hàng & Mang theo đơn hàng"
+      search_btn: "Tìm kiếm"
+      title: "Danh sách sản phẩm"
+      products_empty: "Sản phẩm trống"
     help: 
       heading: "Giúp đỡ"
       page: "Trang giúp đỡ Static Page"
       find_me: "Tìm tôi trong app/views/static_pages/help.html.erb"
+  products:
+    product:
+      add_cart: "Thêm vào giỏ"
+      quantity: "Số lượng: "
+      price: "Giá: "
   admin:
     static_pages:
       index: 
@@ -63,15 +55,6 @@ vi:
       product:
         edit: "Chỉnh sửa"
         delete: "Xóa"
-      create:
-        success: "Thêm sản phẩm mới thành công"
-        error: "Thêm sản phẩm mới thất bại"
-      update:
-        success: "Cập nhật thành công"
-        failed: "Cập nhật thất bại"
-      edit:
-        editing: "Chỉnh sửa sản phẩm"
-        btn_submit: "Submit"
     shared:
       error_messages:
         intro: "Biểu mẫu có"
@@ -87,6 +70,8 @@ vi:
         password: "Mật khẩu"
         password_confirm: "Xác nhận mật khẩu"
         btn_submit: "Tạo tài khoản"
+        have_account: "Bạn có tài khoản? "
+        login: "Đăng nhập"
     show:
       user_not_found: "Không tìm thấy người dùng"
       name: "Tên: "
@@ -122,6 +107,8 @@ vi:
       account: "Tài khoản"
       profile: "Hồ sơ"
       settings: "Cài đặt"
+      en: "Tiếng Anh"
+      vi: "Tiếng Việt"
     footer:
       top: "Giao hàng & Mang theo đơn hàng"
       about: "Giới thiệu"

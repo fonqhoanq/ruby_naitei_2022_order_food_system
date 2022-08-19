@@ -1,5 +1,29 @@
 <% provide(:title, t(".heading")) %>
-<h1><%= t(".page") %></h1>
-<p><%= t(".find_me") %></p>
-<%= link_to t(".en"), locale: :en %>
-<%= link_to t(".vi"), locale: :vi %>
+<!-- banner part starts -->
+<section class="hero bg-image">
+  <div class="hero-inner">
+    <div class="container text-center hero-text font-white">
+      <h1><%= t(".top")%></h1>
+      <div class="banner-form">
+        <form class="form-inline">
+          <div class="form-group">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" id="exampleInputAmount"> </div>
+          </div>
+          <button onclick="location.href='restaurants.html'" type="button" class="btn theme-btn btn-lg"><%= t(".search_btn")%></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="product">
+  <div class="container">
+    <div class="title text-xs-center m-b-30">
+      <h2><%= t(".title")%></h2>
+    </div>
+    <div class="row">
+      <%= render(@products) || t(".products_empty") %>
+    </div>
+    <%== pagy_bootstrap_nav @pagy %>
+  </div>
+</section>

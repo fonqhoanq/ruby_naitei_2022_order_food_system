@@ -16,6 +16,7 @@ require("./js/bootstrap-slider.min")
 require("./js/jquery.isotope.min")
 require("./js/headroom")
 require("./js/foodpicky.min")
+require("./js/foodpicky")
 
 Rails.start()
 Turbolinks.start()

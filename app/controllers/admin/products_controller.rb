@@ -1,4 +1,6 @@
 class Admin::ProductsController < Admin::BaseController
+  before_action :find_product_by_id, except: %i(index new create)
+
   def index
     @pagy, @products = pagy Product.all.newest, items: Settings.pagy.items
   end
@@ -18,9 +20,29 @@ class Admin::ProductsController < Admin::BaseController
     end
   end
 
+  def edit; end
+
+  def update
+    if @product.update product_params
+      flash[:success] = t ".success"
+      redirect_to admin_products_path
+    else
+      flash[:error] = t ".failed"
+      render :edit
+    end
+  end
+
   private
   def product_params
     params.require(:product)
           .permit(Product::PRODUCT_ATTRS)
+  end
+
+  def find_product_by_id
+    @product = Product.find_by id: params[:id]
+    return if @product
+
+    flash[:error] = t ".not_found"
+    redirect_to admin_products_path
   end
 end

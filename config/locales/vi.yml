@@ -109,16 +109,16 @@ vi:
   users:
     new:
       heading: "Đăng ký"
-      form:
-        name: "Tên"
-        address: "Địa chỉ"
-        phone_number: "Số điện thoại"
-        email: "Email"
-        password: "Mật khẩu"
-        password_confirm: "Xác nhận mật khẩu"
-        btn_submit: "Tạo tài khoản"
-        have_account: "Bạn có tài khoản? "
-        login: "Đăng nhập"
+      have_account: "Bạn có tài khoản? "
+      login: "Đăng nhập"
+      btn_submit: "Tạo tài khoản"
+    form:
+      name: "Tên"
+      address: "Địa chỉ"
+      phone_number: "Số điện thoại"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirm: "Xác nhận mật khẩu"
     show:
       user_not_found: "Không tìm thấy người dùng"
       name: "Tên: "
@@ -126,9 +126,14 @@ vi:
       phone_number: "Số điện thoại: "
       email: "Email: "
       page: "Thông tin người dùng"
+      edit: "Chỉnh sửa"
     create:
       signup_success: "Chào mừng đến với Ứng dụng đặt đồ ăn!"
       signup_fail: "Có lỗi xảy ra. Vui lòng thử lại."
+    edit:
+      title: "Chỉnh sửa thông tin cá nhân"
+      editing: "Chỉnh sửa thông tin cá nhân"
+      btn_submit: "Cập nhật"
   sessions:
     new:
       login: "Đăng nhập"

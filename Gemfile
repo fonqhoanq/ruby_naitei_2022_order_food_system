@@ -26,7 +26,7 @@ gem "rails-i18n"
 gem "sass-rails", ">= 6"
 gem "sqlite3"
 gem "turbolinks", "~> 5"
-gem "webpacker", "~> 5.0"
+gem "webpacker", "~> 4.0"
 
 group :development, :test do
   gem "pry", "~> 0.14.0"

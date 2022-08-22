@@ -237,7 +237,7 @@ footer li a {
 /* forms */
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 100%;
+  width: 70%;
   margin-bottom: 15px;
   @include box_sizing;
 }
@@ -270,4 +270,18 @@ input {
 }
 .image-wrap img {
   width: 50%;
+}
+.container_form {
+  display: inline-flex;
+  justify-content: space-between; 
+  align-items: center;  
+
+}
+.text_field{
+  width: 100px;
+  margin: 0 15px 0 5px;
+
+}
+.btn_search {
+  margin: 0 0 0 15px;
 }

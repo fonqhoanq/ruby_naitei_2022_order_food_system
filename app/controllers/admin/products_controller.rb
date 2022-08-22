@@ -2,7 +2,17 @@ class Admin::ProductsController < Admin::BaseController
   before_action :find_product_by_id, except: %i(index new create)
 
   def index
-    @pagy, @products = pagy Product.all.newest, items: Settings.pagy.item_9
+    if params
+      @products = Product
+      filtering_params(params).each do |key, value|
+        if value.present?
+          @products = @products.public_send("filter_by_#{key}", value)
+        end
+      end
+    else
+      @products = Product.all.newest
+    end
+    @pagy, @products = pagy @products, items: Settings.pagy.items
   end
 
   def new
@@ -32,6 +42,15 @@ class Admin::ProductsController < Admin::BaseController
     end
   end
 
+  def destroy
+    if @product.destroy
+      flash[:success] = t ".success"
+    else
+      flash[:error] = t ".failed"
+    end
+    redirect_to admin_products_path
+  end
+
   private
   def product_params
     params.require(:product)
@@ -44,5 +63,9 @@ class Admin::ProductsController < Admin::BaseController
 
     flash[:error] = t ".not_found"
     redirect_to admin_products_path
+  end
+
+  def filtering_params params
+    params.slice(:starts_with, :price_lower, :price_higher)
   end
 end

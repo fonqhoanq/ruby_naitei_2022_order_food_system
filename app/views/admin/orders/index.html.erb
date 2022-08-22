@@ -1,0 +1,26 @@
+<div class="content">
+  <div class="container-fluid">
+    <div class="row p-3">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col"><%= t ".id" %></th>
+            <th scope="col"><%= t ".user_id" %></th>
+            <th scope="col"><%= t ".user_name" %></th>
+            <th scope="col"><%= t ".address" %></th>
+            <th scope="col"><%= t ".status" %></th>
+            <th scope="col"><%= t ".total" %></th>
+            <th scope="col"><%= t ".payment_type" %></th>
+            <th scope="col"><%= t ".created_at" %></th>
+            <th scope="col"><%= t ".updated_at" %></th>
+            <th scope="col"><%= t ".actions" %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render @orders%>
+        </tbody>
+      </table>
+      <%== pagy_bootstrap_nav @pagy %>
+    </div>
+  </div>
+</div>

@@ -27,6 +27,13 @@ vi:
       quantity: "Số lượng: "
       price: "Giá: "
   admin:
+    layouts:
+      header:
+        home: "Trang chủ"
+        product: "Sản Phẩm"
+        order: "Order"
+        en: "Tiếng Anh"
+        vi: "Tiếng Việt"
     static_pages:
       index: 
         heading: "Index"
@@ -72,6 +79,18 @@ vi:
         price_from: "Giá từ: "
         price_to: "Đến"
         search: "Tìm kiếm"
+    orders:
+      index:
+        id: "Order ID"
+        user_id: "User ID"
+        user_name: "Tên người dùng"
+        address: "Địa chỉ"
+        status: "Tình trạng"
+        total: "Tổng hóa đơn"
+        payment_type: "Phương thức thanh toán"
+        created_at: "Thời gian tạo"
+        updated_at: "Cập nhật"
+        actions: "Hành động"
     shared:
       error_messages:
         intro: "Biểu mẫu có"

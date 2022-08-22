@@ -17,6 +17,7 @@ Rails.application.routes.draw do
       root to: "static_pages#index"
       resources :static_pages
       resources :products, except: :show
+      resources :orders, except: :show
     end
   end
 end

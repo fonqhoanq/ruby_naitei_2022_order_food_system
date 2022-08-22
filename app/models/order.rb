@@ -1,4 +1,5 @@
 class Order < ApplicationRecord
   belongs_to :user
-  enum status: {inactive: 0, in_process: 1, actived: 2}
+  enum status: {Inactive: 0, In_process: 1, Actived: 2}
+  scope :newest, ->{order(created_at: :desc)}
 end

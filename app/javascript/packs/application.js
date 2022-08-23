@@ -19,6 +19,7 @@ require("./js/jquery.isotope.min")
 require("./js/headroom")
 require("./js/foodpicky.min")
 require("./js/foodpicky")
+require ("toastr")
 
 Rails.start()
 Turbolinks.start()

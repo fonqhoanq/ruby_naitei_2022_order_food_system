@@ -285,3 +285,28 @@ input {
 .btn_search {
   margin: 0 0 0 15px;
 }
+
+.btn_approve {
+ margin: 0 0 15px 0;
+}
+
+.badge {
+  color: #ffffff;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.badge-success {
+  background-color: #28a745;
+  border: 5px solid #28a745;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+  border: 5px solid #dc3545;
+}
+
+.badge-secondary {
+  background-color: #333940;
+  border: 5px solid #333940;
+}

@@ -82,15 +82,26 @@ vi:
     orders:
       index:
         id: "Order ID"
-        user_id: "User ID"
         user_name: "Tên người dùng"
+        phone_number: "Số điện thoại"
         address: "Địa chỉ"
-        status: "Tình trạng"
-        total: "Tổng hóa đơn"
-        payment_type: "Phương thức thanh toán"
+        status: "Tình trạng hóa đơn   "
+        total: "Số tiền"
+        payment_type: "Phương thức"
         created_at: "Thời gian tạo"
-        updated_at: "Cập nhật"
         actions: "Hành động"
+      order:
+        delete: "Xóa"
+        approve: "Phê duyệt"
+        inactive: "Chưa phê duyệt"
+        avtived: "Đã phê duyệt"
+        paid: "Đã thanh toán"
+      update:
+        approve_success: "Phê duyệt thành công"
+        approve_failed: "Phê duyệt thất bại"
+      destroy:
+        delete_success: "Xóa thành công"
+        delete_failed: "Xóa thất bại"
     shared:
       error_messages:
         intro: "Biểu mẫu có"

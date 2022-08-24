@@ -122,6 +122,8 @@ en:
     add_product:
       add_to_cart_success: "Add product to cart successed"
       product_not_found: "Product not found"
+    create:
+      add_to_cart_success: "Add product to cart successed"
   orders:
     new:
       order: "Order"
@@ -136,3 +138,13 @@ en:
       cash: "Cash"
       total: "Total: "
       create_order_fail: "Create order fail"
+    show:
+      order_info: "Order information"
+      order_not_found: "Order not found"
+      user_name: "User name: "
+      address: "Address: "
+      phone_number: "Phone number: "
+      note: "Note: "
+      payment_type: "Payment type: "
+      list_products_order: "List products: "
+      total: "Total: "

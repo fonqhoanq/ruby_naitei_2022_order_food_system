@@ -2,6 +2,8 @@ class Product < ApplicationRecord
   PRODUCT_ATTRS = [:name, :description, :price, :quantity, :category_id,
                    :image].freeze
   belongs_to :category
+  has_many :detail_orders
+  has_many :orders, through: :detail_orders
   mount_uploader :image, ImageUploader
   validates :name, presence: true,
             length: {minium: Settings.product.name_min_length,

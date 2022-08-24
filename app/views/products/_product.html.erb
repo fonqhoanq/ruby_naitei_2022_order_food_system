@@ -5,13 +5,15 @@
       <div class="distance"><i class="fa fa-pin"></i>1240m</div>
       <div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
     </div>
-    <h5><a href="profile.html"><%= product.name %></a></h5>
-    <div class="product-name"><%= t(".quantity")%><%= product.quantity %></div>
-    <div class="price-btn-block">
-      <span class="price"><%= number_to_currency(product.price) %></span>
-      <% if logged_in? %>
-        <%= button_to t(".add_cart"), add_product_path(id: product.id), method: :post, class:"btn theme-btn-dash pull-right " %>
-      <% end %>
+      <div class="content">
+      <h5><a href="profile.html"><%= product.name %></a></h5>
+      <div class="product-name"><%= t(".quantity")%><%= product.quantity %></div>
+      <div class="price-btn-block">
+        <span class="price"><%= number_to_currency(product.price) %></span>
+        <% if logged_in? %>
+          <%= button_to t(".add_cart"), add_product_path(id: product.id), method: :post, class:"btn theme-btn-dash pull-right " %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

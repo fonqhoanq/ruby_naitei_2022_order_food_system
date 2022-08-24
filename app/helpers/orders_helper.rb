@@ -11,7 +11,7 @@ module OrdersHelper
     end
     products
   end
-  
+
   def get_total_price
     session[:cart]["tottal_price"]
   end

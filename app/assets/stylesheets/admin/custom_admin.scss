@@ -293,7 +293,6 @@ input {
 .badge {
   color: #ffffff;
   border-radius: 25px;
-  font-size: 14px;
 }
 
 .badge-success {
@@ -301,9 +300,9 @@ input {
   border: 5px solid #28a745;
 }
 
-.badge-danger {
-  background-color: #dc3545;
-  border: 5px solid #dc3545;
+.badge-paid {
+  background-color: #0275d8;
+  border: 5px solid #0275d8;
 }
 
 .badge-secondary {

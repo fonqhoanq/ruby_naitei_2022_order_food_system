@@ -172,6 +172,7 @@ vi:
       en: "Tiếng Anh"
       vi: "Tiếng Việt"
       cart: "Giỏ hàng"
+      orders: "Đơn đặt hàng"
     footer:
       top: "Giao hàng & Mang theo đơn hàng"
       about: "Giới thiệu"
@@ -236,3 +237,19 @@ vi:
       payment_type: "Phương thức thanh toàn: "
       list_products_order: "Danh sách sản phẩm: "
       total: "Tổng hóa đơn"
+    index:
+      orders: "Danh sách đơn hàng"
+      no: "Thứ tự"
+      user_name: "Tên người dùng"
+      phone_number: "Số điện thoại"
+      address: "Địa chỉ"
+      status: "Tình trạng hóa đơn"
+      total: "Số tiền"
+      payment_type: "Phương thức"
+      created_at: "Thời gian đặt hàng"
+      actions: "Hành động"
+      orders_empty: "Danh sách đơn hàng trống"
+    order:
+      order_detail: "Xem chi tiết "
+    create:
+      create_order_fail: "Tạo đơn đặt hàng không thành công"

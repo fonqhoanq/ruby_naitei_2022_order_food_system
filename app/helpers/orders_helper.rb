@@ -15,4 +15,16 @@ module OrdersHelper
   def get_total_price
     session[:cart]["tottal_price"]
   end
+
+  def check_status order
+    if order.inactive?
+      return content_tag(:span, "Chưa phê duyệt",
+                         class: %w(badge badge-secondary))
+    elsif order.actived? 
+      return content_tag(:span, "Đã phê duyệt",
+                         class: %w(badge badge-success))
+    else  
+      return content_tag(:span, "Đã thanh toán", class: %w(badge badge-paid))
+    end
+  end
 end

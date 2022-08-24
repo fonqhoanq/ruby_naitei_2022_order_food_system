@@ -84,6 +84,7 @@ en:
       en: "English"
       vi: "Vietnamese"
       cart: "Cart"
+      orders: "Orders"
     footer:
       top: "Order Delivery & Take-Out"
       about: "About"
@@ -148,3 +149,19 @@ en:
       payment_type: "Payment type: "
       list_products_order: "List products: "
       total: "Total: "
+    index:
+      orders: "List Orders"
+      no: "No."
+      user_name: "User name"
+      address: "Address"
+      phone_number: "Phone number"
+      note: "Note"
+      payment_type: "Payment type"
+      created_at: "Thời gian đặt hàng"
+      total: "Total"
+      actions: "Hành động"
+      orders_empty: "Orders empty"
+    order:
+      order_detail: "Order detail"
+    create:
+      create_order_fail: "Create order fail"

@@ -6,6 +6,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+label.required:after{
+  content:" *";
+  color: #f30;
+}
 body {
   background: rgba(252, 251, 249, 0.68);
   font-size: 16px;

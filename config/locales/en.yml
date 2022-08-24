@@ -122,3 +122,17 @@ en:
     add_product:
       add_to_cart_success: "Add product to cart successed"
       product_not_found: "Product not found"
+  orders:
+    new:
+      order: "Order"
+      list_products_order: "List products"
+      user_name: "User name"
+      address: "Address"
+      phone_number: "Phone number"
+      note: "Note"
+      payment_type: "Payment type"
+      choose: "Select One"
+      card: "Card"
+      cash: "Cash"
+      total: "Total: "
+      create_order_fail: "Create order fail"

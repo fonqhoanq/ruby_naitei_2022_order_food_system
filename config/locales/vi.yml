@@ -34,6 +34,11 @@ vi:
         order: "Order"
         en: "Tiếng Anh"
         vi: "Tiếng Việt"
+      sidebar:
+        home: "Trang chủ"
+        order: "Đơn hàng"
+        product: "Sản phẩm"
+        help: "Giúp đỡ"
     static_pages:
       index: 
         heading: "Index"
@@ -44,12 +49,13 @@ vi:
         heading: "Tạo sản phẩm mới"
         btn_submit: "Submit"
       form:
-        name: "Tên sản phâm"
+        name: "Tên sản phẩm"
         des: "Mô tả chi tiết"
         price: "Giá"
         quantity: "Số lượng"
         cate: "Loại sản phẩm"
       index:
+        heading: "Danh sách sản phẩm"
         new_product: "Sản phẩm mới"
         id: "ID"
         name: "Tên sản phẩm"
@@ -81,6 +87,7 @@ vi:
         search: "Tìm kiếm"
     orders:
       index:
+        heading: "Danh sách đơn hàng"
         id: "Order ID"
         user_name: "Tên người dùng"
         phone_number: "Số điện thoại"
@@ -134,6 +141,9 @@ vi:
       title: "Chỉnh sửa thông tin cá nhân"
       editing: "Chỉnh sửa thông tin cá nhân"
       btn_submit: "Cập nhật"
+    update:
+      update_success: "Cập nhật thông tin thành công"
+      update_failed: "Cập nhật thông tin thất bại"
   sessions:
     new:
       login: "Đăng nhập"

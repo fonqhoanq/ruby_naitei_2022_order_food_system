@@ -44,7 +44,7 @@ vi:
         heading: "Tạo sản phẩm mới"
         btn_submit: "Submit"
       form:
-        name: "Tên sản phâm"
+        name: "Tên sản phẩm"
         des: "Mô tả chi tiết"
         price: "Giá"
         quantity: "Số lượng"

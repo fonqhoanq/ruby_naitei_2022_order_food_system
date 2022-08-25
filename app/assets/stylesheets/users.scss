@@ -428,7 +428,7 @@ input {
 }
 .food-item-wrap {
   border: 1px solid #eaebeb;
-  border-radius: 2px;
+  border-radius: 10px;
   overflow: hidden;
   margin-bottom: 30px;
   background: #fafaf8;
@@ -680,4 +680,12 @@ input {
       font-size: 11px;
       line-height: 20px;
   }
+}
+
+label.required:after {
+  content:"*";
+  color: #db4d3f;
+}
+.pull-right {
+  margin: 10px 0 10px 0;
 }

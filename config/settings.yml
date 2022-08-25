@@ -19,4 +19,5 @@ product:
 pagy:
   item_9: 9
   item_5: 5
+  item_15: 15
 date_format: "%Y-%m-%d"

@@ -2,7 +2,7 @@ class Admin::OrdersController < Admin::BaseController
   before_action :find_order_by_id, except: %i(index)
 
   def index
-    @pagy, @orders = pagy Order.all.newest, items: Settings.pagy.item_5
+    @pagy, @orders = pagy Order.all.newest, items: Settings.pagy.item_9
   end
 
   def edit; end

@@ -172,12 +172,12 @@ hr {
   background-color: #f30 !important;
   padding: 10px;
   border-radius: 100%;
-  margin-top: 8px;
+  margin-top: 6px;
   margin-left: 2px !important;
 }
 .nav-cart-count {
   margin-top: -8px;
-  margin-left: -12px;
+  margin-left: -15px;
 }
 /* ==========================
 *  Footer
@@ -484,6 +484,10 @@ input {
   padding-top: 3px;
 }
 
+.bg-image {
+  background-size: cover;
+}
+
 @media (min-width: 320px) and (max-width: 568px) {
   .food-item-wrap .left {
       float: left;
@@ -699,4 +703,7 @@ label.required:after {
 .price_detail {
   width: 50%;
   height: 60px;
+}
+.admin-product-container {
+  width: 80% !important;
 }

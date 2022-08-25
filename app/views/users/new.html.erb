@@ -1,13 +1,9 @@
 <% provide :title, t(".title") %>
 <% provide :btn_text, t(".btn_submit") %>
-<div class="content">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-9 rounded bg-white px-3 p-3">
-        <h1><%= t ".heading" %></h1>
-        <%= render "form" %>
-        <%= t ".have_account" %><%= link_to t(".login"), login_path %>
-      </div>
-    </div>
+<div class="container user-container">
+  <div class="row">
+    <h1><%= t ".heading" %></h1>
+    <%= render "form" %>
+    <%= t ".have_account" %><%= link_to t(".login"), login_path %>
   </div>
 </div>

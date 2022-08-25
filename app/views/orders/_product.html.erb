@@ -1,0 +1,15 @@
+<div class="food-item white">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-lg-8">
+      <div class="rest-logo pull-left">
+          <%= image_tag(product[:product].image.url, class: "restaurant-logo pull-left") if product[:product].image?  %>
+      </div>
+      <div class="rest-descr">
+          <h6><a href="#"><%= product[:product].name %></a></h6>
+          <p> <%= number_to_currency(product[:product].price) %></p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-4 pull-right item-cart-info"> <span class="price pull-left"><%= product[:count] %></span>
+    </div>
+  </div>
+</div>

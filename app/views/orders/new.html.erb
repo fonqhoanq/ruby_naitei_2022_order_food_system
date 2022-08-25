@@ -1,0 +1,38 @@
+<% provide :title, t(".order") %>
+<div class="container order-addon">
+  <h1><%= t(".order") %></h1>
+  <%= form_for (@order) do |f| %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <div class="form-group">
+      <%= f.label :name, t(".user_name"), class: "required" %>
+      <%= f.text_field :user_name, class: "form-control"%>
+    </div>
+    <div class="form-group">
+      <%= f.label :address, t(".address"), class: "required" %>
+      <%= f.text_area :address, class: "form-control"%>
+    </div>
+    <div class="form-group">
+      <%= f.label :phone_number, t(".phone_number"), class: "required" %>
+      <%= f.text_field :phone_number, class: "form-control"%>
+    </div>
+    <div class="form-group">
+      <%= f.label :note, t(".note") %>
+      <%= f.text_area :note, class: "form-control"%>
+    </div>
+    <div class="form-group">
+      <%= f.label :payment_type, t(".payment_type"), class: "required" %>
+      <%= f.select :payment_type, options_for_select([[t(".choose"), ""], t(".card"), t(".cash")]), {class: "form-control"} %>
+    </div>
+    <label><%= t(".list_products_order") %></label>
+    <div class="collapse in order-content">
+      <% get_products_cart.each do |product| %>
+        <%= render "product", product: product %>
+      <% end %>
+      <span class="price pull-left"><%= t(".total")%></span>
+      <div class="col-xs-12 col-sm-12 col-lg-4 pull-right">
+        <span class="price pull-left"><%= number_to_currency(get_total_price) %></span>
+        </div>
+    </div>
+    <%= f.submit t(".order"), class: "btn theme-btn-dash pull-right cart-btn-order" %>
+  <% end %>
+</div>

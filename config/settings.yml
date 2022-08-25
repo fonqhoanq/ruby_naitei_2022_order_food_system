@@ -9,6 +9,7 @@ valid:
   address_max_len: 255
   phone_number_min_len: 10
   phone_number_max_len: 15
+  note_max_len: 255
 product:
   name_max_length: 50
   name_min_length: 5

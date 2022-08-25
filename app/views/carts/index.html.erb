@@ -29,7 +29,7 @@
       <div class="col-xs-12 col-sm-12 col-lg-4 pull-right">
         <span class="price pull-left"><%= number_to_currency(tottal_price) %></span>
       </div>
-      <%= button_to t(".order"), root_path, method: :get, class:"btn theme-btn-dash pull-right cart-btn-order" %>
+      <%= button_to t(".order"), new_order_path, method: :get, class:"btn theme-btn-dash pull-right cart-btn-order" %>
     </div>
 
   <% else %>

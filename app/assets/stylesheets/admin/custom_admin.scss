@@ -8,7 +8,7 @@
 }
 body {
   background: rgba(252, 251, 249, 0.68);
-  font-size: 16px;
+  font-size: 50px;
   color: #4d4f56;
   font-weight: 400;
   overflow-x: hidden;
@@ -17,21 +17,7 @@ body {
 *   Typohraphy
 ============================*/
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Source Sans Pro", sans-serif;
-    color: #25282b;
-}
+
 
 a {
     color: #f30;
@@ -67,10 +53,11 @@ hr {
   width: 100%;
   border: 0;
   z-index: 99;
+  position: fixed;
 }
 
 .nav-fixed {
-  position: fixed;
+  position: static;
   width: 100%;
   z-index: 10;
 }
@@ -107,7 +94,6 @@ hr {
   }
   .navbar-brand,
   .navbar-nav .nav-item {
-      display: block;
   }
   .navbar-nav .nav-item + .nav-item {
       margin-left: 0;
@@ -308,4 +294,59 @@ input {
 .badge-secondary {
   background-color: #333940;
   border: 5px solid #333940;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #111723;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  height: 1000px;
+  padding-top: 50px;
+
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }

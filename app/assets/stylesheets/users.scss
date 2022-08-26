@@ -432,9 +432,9 @@ input {
 }
 .food-item-wrap {
   border: 1px solid #eaebeb;
-  border-radius: 2px;
+  border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
   background: #fafaf8;
 }
 
@@ -667,7 +667,10 @@ input {
       padding: 10px;
   }
   .food-item-wrap .price-btn-block {
-      text-align: center
+      display: flex !important;
+      text-align: center;
+      flex-direction: row !important;
+      justify-content: space-between;
   }
   .food-item-wrap .price-btn-block .price {
       margin-bottom: 15px;
@@ -684,4 +687,16 @@ input {
       font-size: 11px;
       line-height: 20px;
   }
+}
+
+label.required:after {
+  content:"*";
+  color: #db4d3f;
+}
+.pull-right {
+  margin: 10px 0 10px 0;
+}
+.price_detail {
+  width: 50%;
+  height: 60px;
 }

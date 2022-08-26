@@ -8,10 +8,11 @@ class UsersController < ApplicationController
 
   def update
     if @user.update user_params
-      flash[:success] = t ".success"
+      flash[:success] = t ".update_success"
+      binding.pry
       redirect_to @user
     else
-      flash[:error] = t ".failed"
+      flash[:error] = t ".update_failed"
       render :edit
     end
   end

@@ -1,5 +1,10 @@
 class OrdersController < ApplicationController
   before_action :get_order, only: :show
+  def index
+    @pagy, @orders = pagy(current_user.orders.newest,
+                          items: Settings.pagy.item_5)
+  end
+
   def new
     @order = Order.new
   end
@@ -29,7 +34,7 @@ class OrdersController < ApplicationController
   def order_params
     params.require(:order)
           .permit(:user_id, :user_name, :address, :phone_number,
-                  :note, :payment_type, total: session[:cart]["tottal_price"])
+                  :note, :payment_type, :total)
   end
 
   def total_price_from_cart

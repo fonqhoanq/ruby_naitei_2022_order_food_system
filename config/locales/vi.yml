@@ -210,6 +210,8 @@ vi:
     add_product:
       add_to_cart_success: "Thêm sản phẩm vào giỏ hàng thành công"
       product_not_found: "Không tìm thấy sản phẩm"
+    create:
+      add_to_cart_success: "Thêm sản phẩm vào giỏ hàng thành công"
   orders:
     new:
       order: "Đặt hàng"
@@ -224,3 +226,13 @@ vi:
       cash: "Tiền mặt"
       total: "Tổng hóa đơn"
       create_order_fail: "Tạo đơn đặt hàng không thành công"
+    show:
+      order_info: "Thông tin đơn hàng"
+      order_not_found: "Không tìm thấy đơn hàng"
+      user_name: "Tên người đặt hàng: "
+      address: "Địa chỉ: "
+      phone_number: "Số điện thoại: "
+      note: "Ghi chú: "
+      payment_type: "Phương thức thanh toàn: "
+      list_products_order: "Danh sách sản phẩm: "
+      total: "Tổng hóa đơn"

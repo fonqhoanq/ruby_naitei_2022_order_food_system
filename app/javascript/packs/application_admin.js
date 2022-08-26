@@ -10,7 +10,6 @@ import "channels"
 // require("jquery")
 import "bootstrap"
 import "../stylesheets/application_admin"
-require("jquery")
 require("./js/jquery.min")
 require("./js/tether.min")
 require("./js/bootstrap.min")

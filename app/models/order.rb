@@ -1,5 +1,7 @@
 class Order < ApplicationRecord
   belongs_to :user
+  has_many :detail_orders, dependent: :destroy
+  has_many :products, through: :detail_orders
   enum status: {inactive: 0, actived: 1, paid: 2}
   scope :newest, ->{order(created_at: :desc)}
 

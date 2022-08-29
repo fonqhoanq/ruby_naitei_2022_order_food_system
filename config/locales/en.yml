@@ -1,5 +1,4 @@
 en:
-  hello: "Hello world"
   base_title: "Order food system"
   number:
     currency:
@@ -29,23 +28,105 @@ en:
       quantity: "Quantity: "
       price: "Price: "
   admin:
+    layouts:
+      header:
+        home: "Home"
+        product: "Product"
+        order: "Order"
+        en: "English"
+        vi: "Vietnamese"
+      sidebar:
+        home: "Home"
+        order: "Order"
+        product: "Product"
+        help: "Help"
     static_pages:
       index: 
         heading: "Index"
         page: "Static page by Admin site"
+    products:
+      new:
+        title: "New Product"
+        heading: "New Product"
+        btn_submit: "Submit"
+      form:
+        name: "Product Name"
+        des: "Description"
+        price: "Price"
+        quantity: "Quantity"
+        cate: "Category"
+      index:
+        heading: "Products List"
+        new_product: "New Product"
+        id: "ID"
+        name: "Name"
+        price: "Price"
+        quantity: "Quantity"
+        image: "Image"
+        created_at: "Create at"
+        updated_at: "Update at"
+        actions: "Actions"
+      product:
+        edit: "Edit"
+        delete: "Delete"
+      create:
+        success: "Add product successfully"
+        error: "Add product failed"
+      update:
+        success: "Update product successfully"
+        failed: "Update product failed"
+      edit:
+        editing: "Edit product"
+        btn_submit: "Submit"
+      destroy:
+        success: "Delete product successfully"
+        failed: "Delete product failed"
+      form_search:
+        name: "Product Name: "
+        price_from: "Price from: "
+        price_to: "To"
+        search: "Search"
+    orders:
+      index:
+        heading: "Orders List"
+        id: "Order ID"
+        user_name: "Username"
+        phone_number: "Phone number"
+        address: "Address"
+        status: "Status          "
+        total: "Total"
+        payment_type: "Pay method"
+        created_at: "Create at"
+        actions: "Actions"
+      order:
+        delete: "Delete"
+        approve: "Approve"
+        inactive: "Inactive"
+        avtived: "Actived"
+        paid: "Paid"
+      update:
+        approve_success: "Approve order successfully"
+        approve_failed: "Approve order failed"
+      destroy:
+        delete_success: "Delete order successfully"
+        delete_failed: "Delete order failed"
+    shared:
+      error_messages:
+        intro: "Form have"
+        error: "error"
   users:
     new:
       heading: "Sign up"
-      form:
-        name: "Name"
-        address: "Address"
-        phone_number: "Phone number"
-        email: "Email"
-        password: "Password"
-        password_confirm: "Password confirmation"
-        btn_submit: "Create my account"
-        have_account: "Have account? "
-        login: "Login"
+      have_account: "Do you have account? "
+      login: "Login"
+      btn_submit: "Signup"
+    form:
+      name: "Name"
+      address: "Address"
+      phone_number: "Phone number"
+      email: "Email"
+      password: "Password"
+      password_confirm: "Password confirmation"
     show:
       user_not_found: "User not found"
       name: "Name: "
@@ -53,9 +134,14 @@ en:
       phone_number: "Phone number: "
       email: "Email: "
       page: "Profile"
+      edit: "Edit"
     create:
       signup_success: "Wellcome to the Order Food System"
       signup_fail: "Errors occurred. Please try again."
+    edit:
+      title: "Edit user informations"
+      editing: "Edit user informations"
+      btn_submit: "Update"
   sessions:
     new:
       login: "Log in"
@@ -161,7 +247,11 @@ en:
       total: "Total"
       actions: "Hành động"
       orders_empty: "Orders empty"
+      inactive: "Inactive"
+      actived: "Actived"
+      paid: "Paid"
     order:
       order_detail: "Order detail"
     create:
       create_order_fail: "Create order fail"
+      create_order_success: "Create order successed"

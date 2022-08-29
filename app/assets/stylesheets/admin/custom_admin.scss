@@ -271,6 +271,9 @@ input {
 .btn_search {
   margin: 0 0 0 15px;
 }
+.btn_search:hover {
+  opacity: 0.9;
+}
 
 .btn_approve {
  margin: 0 0 15px 0;
@@ -328,7 +331,7 @@ input {
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
   height: 160px;
-  padding-top: 50px;
+  padding: 50px 0 50px 0;
 
 }
 
@@ -349,4 +352,8 @@ div.content {
     text-align: center;
     float: none;
   }
+}
+.btn_delete {
+  width: 108px !important;
+  margin: 15px 0 0 0;
 }

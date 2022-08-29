@@ -1,11 +1,11 @@
 module Admin::OrdersHelper
   def check_status order
     if order.inactive?
-      return content_tag(:span,"Chưa phê duyệt",class: ["badge","badge-secondary"])
+      content_tag(:span, I18n.t("admin.orders.order.inactive"), class: ["badge","badge-secondary"])
     elsif order.actived? 
-      return content_tag(:span,"Đã phê duyệt",class: ["badge","badge-success"])
+      content_tag(:span, I18n.t("admin.orders.order.actived"), class: ["badge","badge-success"])
     else  
-      return content_tag(:span,"Đã thanh toán",class: ["badge","badge-paid"])
+      content_tag(:span, I18n.t("admin.orders.order.paid"), class: ["badge","badge-paid"])
     end
   end
 end

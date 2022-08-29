@@ -88,11 +88,11 @@ vi:
     orders:
       index:
         heading: "Danh sách đơn hàng"
-        id: "Order ID"
+        id: "ID"
         user_name: "Tên người dùng"
         phone_number: "Số điện thoại"
         address: "Địa chỉ"
-        status: "Tình trạng hóa đơn   "
+        status: "   Tình trạng hóa đơn   "
         total: "Số tiền"
         payment_type: "Phương thức"
         created_at: "Thời gian tạo"
@@ -101,7 +101,7 @@ vi:
         delete: "Xóa"
         approve: "Phê duyệt"
         inactive: "Chưa phê duyệt"
-        avtived: "Đã phê duyệt"
+        actived: "Đã phê duyệt"
         paid: "Đã thanh toán"
       update:
         approve_success: "Phê duyệt thành công"
@@ -249,7 +249,11 @@ vi:
       created_at: "Thời gian đặt hàng"
       actions: "Hành động"
       orders_empty: "Danh sách đơn hàng trống"
+      inactive: "Chưa phê duyệt"
+      actived: "Đã phê duyệt"
+      paid: "Đã thanh toán"
     order:
       order_detail: "Xem chi tiết "
     create:
       create_order_fail: "Tạo đơn đặt hàng không thành công"
+      create_order_success: "Tạo đơn đặt hàng thành công"

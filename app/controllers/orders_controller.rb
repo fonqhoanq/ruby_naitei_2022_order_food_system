@@ -20,6 +20,7 @@ class OrdersController < ApplicationController
         DetailOrder.create(detail_order_params)
       end
       session.delete(:cart)
+      flash[:success] = t ".create_order_success"
       redirect_to @order
     else
       flash[:danger] = t(".create_order_fail")

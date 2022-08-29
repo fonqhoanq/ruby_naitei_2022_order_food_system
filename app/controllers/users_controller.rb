@@ -9,7 +9,6 @@ class UsersController < ApplicationController
   def update
     if @user.update user_params
       flash[:success] = t ".update_success"
-      binding.pry
       redirect_to @user
     else
       flash[:error] = t ".update_failed"
@@ -21,7 +20,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       flash[:success] = t(".signup_success")
-      redirect_to @user
+      redirect_to login_path
     else
       flash[:danger] = t(".signup_fail")
       render :new

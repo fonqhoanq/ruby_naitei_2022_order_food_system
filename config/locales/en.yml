@@ -3,8 +3,8 @@ en:
   number:
     currency:
       format:
-        unit: "vnd"      
-        delimiter: ","    
+        unit: " VND"      
+        delimiter: "."   
         format: "%n%u" 
   layouts:
     application_admin: 
@@ -206,6 +206,10 @@ en:
       cart_empty: "Cart empty"
       total: "Total: "
       order: "Order"
+    minus_product:
+      minus_product_success: "Minus product successed"
+    plus_product:
+      plus_product_success: "Plus product successed"
     add_product:
       add_to_cart_success: "Add product to cart successed"
       product_not_found: "Product not found"

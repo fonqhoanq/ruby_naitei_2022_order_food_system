@@ -2,8 +2,8 @@ vi:
   number:
     currency:
       format:
-        unit: "vnd" 
-        delimiter: ","
+        unit: " VND" 
+        delimiter: "."
         format: "%n%u"
   hello: "Xin chào thế giới"
   base_title: "Hệ thống đặt đồ ăn"
@@ -208,6 +208,10 @@ vi:
       cart_empty: "Giỏ hàng trống"
       total: "Tổng: "
       order: "Đặt hàng"
+    minus_product:
+      minus_product_success: "Sản phẩm giảm đã thành công"
+    plus_product:
+      plus_product_success: "Sản phẩm tăng đã thành công"
     add_product:
       add_to_cart_success: "Thêm sản phẩm vào giỏ hàng thành công"
       product_not_found: "Không tìm thấy sản phẩm"

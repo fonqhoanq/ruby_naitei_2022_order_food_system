@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :get_products, only: [:create]
   # POST /cart/:id/add-product
   def create
@@ -7,8 +8,8 @@ class CartsController < ApplicationController
     fetch_add_product
     session[:cart]["tottal_count"] += 1
     session[:cart]["tottal_price"] += @product.price
-    flash[:success] = t ".add_to_cart_success"
-    redirect_to carts_url
+    render json: {status: 200, message: t(".add_to_cart_success"), 
+                  "nav-cart-count": session[:cart]["tottal_count"]}
   end
 
   # POST /cart
@@ -33,7 +34,10 @@ class CartsController < ApplicationController
     session[:cart]["tottal_count"] += 1
     session[:cart]["tottal_price"] +=
       session[:cart]["products"][params[:id]]["price"]
-    redirect_to carts_url
+    render json: {status: 200, message: t(".plus_product_success"),
+                  "product-count": session[:cart]["products"][params[:id]]["count"],
+                  "total-price-cart": session[:cart]["tottal_price"],
+                  "nav-cart-count": session[:cart]["tottal_count"]}
   end
 
   # POST cart/:id/minus-product
@@ -43,7 +47,10 @@ class CartsController < ApplicationController
     session[:cart]["tottal_price"]           -=
       session[:cart]["products"][params[:id]]["price"]
     zero_delete_product
-    redirect_to carts_url
+    render json: {status: 200, message: t(".minus_product_success"),
+                  "product-count": session[:cart]["products"][params[:id]]["count"],
+                  "total-price-cart": session[:cart]["tottal_price"],
+                  "nav-cart-count": session[:cart]["tottal_count"]}
   end
 
   private

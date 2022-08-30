@@ -15,6 +15,8 @@ class Admin::ProductsController < Admin::BaseController
     @pagy, @products = pagy @products.newest, items: Settings.pagy.item_5
   end
 
+  def show; end
+
   def new
     @product = Product.new
   end

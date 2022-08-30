@@ -6,6 +6,7 @@ en:
         unit: " VND"      
         delimiter: "."   
         format: "%n%u" 
+        precision: 0
   layouts:
     application_admin: 
       heading: "Site Admin"
@@ -69,6 +70,7 @@ en:
       product:
         edit: "Edit"
         delete: "Delete"
+        product_detail: "Detail"
       create:
         success: "Add product successfully"
         error: "Add product failed"
@@ -86,6 +88,14 @@ en:
         price_from: "Price from: "
         price_to: "To"
         search: "Search"
+      show:
+        detail_product: "Detail product"
+        edit: "Edit"
+        name: "Product name: "
+        description: "Description: "
+        quantity: "Quantity: "
+        price: "Price: "
+        category: "Category: "
     orders:
       index:
         heading: "Orders List"

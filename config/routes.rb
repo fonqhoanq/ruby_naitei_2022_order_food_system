@@ -22,7 +22,7 @@ Rails.application.routes.draw do
     namespace :admin do
       root to: "static_pages#index"
       resources :static_pages
-      resources :products, except: :show
+      resources :products
       resources :orders, except: :show
     end
   end

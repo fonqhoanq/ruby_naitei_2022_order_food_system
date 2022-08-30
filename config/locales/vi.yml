@@ -5,6 +5,7 @@ vi:
         unit: " VND" 
         delimiter: "."
         format: "%n%u"
+        precision: 0
   hello: "Xin chào thế giới"
   base_title: "Hệ thống đặt đồ ăn"
   layouts:
@@ -68,6 +69,7 @@ vi:
       product:
         edit: "Chỉnh sửa"
         delete: "Xóa"
+        product_detail: "Chi tiết"
       create:
         success: "Thêm sản phẩm mới thành công"
         error: "Thêm sản phẩm mới thất bại"
@@ -85,6 +87,14 @@ vi:
         price_from: "Giá từ: "
         price_to: "Đến"
         search: "Tìm kiếm"
+      show:
+        detail_product: "Chi tiết sản phẩm"
+        edit: "Chỉnh sửa"
+        name: "Tên sản phẩm: "
+        description: "Mô tả: "
+        quantity: "Số lượng: "
+        price: "Đơn giá: "
+        category: "Thể loại: "
     orders:
       index:
         heading: "Danh sách đơn hàng"

@@ -8,7 +8,7 @@ class CartsController < ApplicationController
     fetch_add_product
     session[:cart]["tottal_count"] += 1
     session[:cart]["tottal_price"] += @product.price
-    render json: {status: 200, message: t(".add_to_cart_success"), 
+    render json: {status: 200, message: t(".add_to_cart_success"),
                   "nav-cart-count": session[:cart]["tottal_count"]}
   end
 

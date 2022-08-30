@@ -1,0 +1,25 @@
+<% provide :title, t(".detail_product") %>
+<div class="content">
+  <h2><%= t(".detail_product") %></h1>
+  <div class="row">
+    <section class="inner-page-hero bg-image">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 product-img">
+        <div class="image-wrap">
+          <%= image_tag @product.image.url if @product.image? %>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 product-desc">
+        <div class="pull-left right-text white-txt">
+          <h2><%=t(".name")%><%= @product.name %></h2>
+          <ul class="nav nav-inline">
+            <p><li class="nav-item"><%=t(".description")%><%= @product.description %></li></p>
+            <p><li class="nav-item"><%=t(".price")%><%= number_to_currency(@product.price) %></li></p></p>
+            <p><li class="nav-item"><%=t(".quantity")%><%= @product.quantity %></li></p></p>
+            <p><li class="nav-item"><%=t(".category")%><%= @product.category.name %></li></p></p>
+          </ul>
+          <%= link_to t(".edit"), edit_admin_product_path(@product), class: "btn btn-success btn_delete" %>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

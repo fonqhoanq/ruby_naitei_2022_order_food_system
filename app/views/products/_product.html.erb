@@ -11,7 +11,9 @@
       <div class="price-btn-block">
         <span class="price"><%= number_to_currency(product.price) %></span>
         <% if logged_in? %>
-          <%= button_to t(".add_cart"), add_product_path(id: product.id), method: :post, class:"btn theme-btn-dash pull-right " %>
+          <%= form_with(url: add_product_path(id: product.id ),id: "add_comment", html: {class:"add-to-cart", :'data-id' => product.id}) do |f| %>
+            <%= f.submit t(".add_cart"), class: "btn theme-btn-dash pull-right submit-add-to-cart" %>
+          <% end %>
         <% end %>
       </div>
     </div>

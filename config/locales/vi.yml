@@ -119,6 +119,13 @@ vi:
       destroy:
         delete_success: "Xóa thành công"
         delete_failed: "Xóa thất bại"
+      form_search:
+        name: "Tên người dùng: "
+        phone_number: "Số điện thoại: "
+        address: "Địa chỉ: "
+        created_at: "Thời gian tạo: "
+        status: "Trạng thái hóa đơn: "
+        search: "Tìm kiếm"
     shared:
       error_messages:
         intro: "Biểu mẫu có"

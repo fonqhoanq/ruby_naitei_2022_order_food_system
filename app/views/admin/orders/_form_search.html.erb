@@ -1,0 +1,13 @@
+<%= search_form_for(@searchs, url: admin_orders_path, method: "get") do |f| %>
+  <%= f.label :user_name_cont, t(".name") %>
+  <%= f.text_field :user_name_cont, value: params[:user_name_cont], class: "form-control" %>
+  <%= f.label :phone_number_cont, t(".phone_number") %>
+  <%= f.text_field :phone_number_cont, value: params[:phone_number_cont], class: "form-control" %>
+  <%= f.label :address_cont, t(".address") %>
+  <%= f.text_field :address_cont, value: params[:address_cont], class: "form-control" %>
+  <%= f.label :created_at_cont, t(".created_at")%>
+  <%= f.date_field :created_at_cont, class: "form-control", value: params[:created_at_cont] %>
+  <%= f.label :status_eq, t(".status")%>
+  <%= f.select :status_eq, order_status_options, {}, {prompt: params[:status_eq], class: "form-control"} %>
+  <%= f.submit t(".search"), class: "btn btn-success" %>
+<% end %>

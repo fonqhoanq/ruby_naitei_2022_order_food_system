@@ -6,12 +6,13 @@
       <h1><%= t(".top")%></h1>
       <div class="banner-form">
         <form class="form-inline">
-          <%= form_tag(root_path) do %>
+          <%= search_form_for(@searchs, url: root_path, method: "get") do |f| %>
             <div class="form-group">
-              <%= text_field_tag :starts_with, params[:starts_with], class: "text_field form-control" %>
-              <%= button_tag t(".search_btn"), name: nil, class: "btn theme-btn btn_search" %>
+              <%= f.text_field :name_cont, value: params[:name_cont], class: "text_field form-control" %>
+              <%= f.submit t(".search_btn"), class: "btn theme-btn btn_search" %>
             </div>
           <% end %>
+
         </form>
       </div>
     </div>

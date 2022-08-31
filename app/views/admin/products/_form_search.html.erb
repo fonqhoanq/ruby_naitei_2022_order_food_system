@@ -1,19 +1,11 @@
-<%= form_tag admin_products_path, method: :get do %>
-  <div class="container_form form-group">
-    <div class="container_form_details">
-      <%= label_tag :starts_with, t(".name") %>
-      <%= text_field_tag :starts_with, params[:starts_with], class: "text_field" %>
-    </div>
-    <div class="container_form_details">
-      <%= label_tag :price_lower, t(".price_from") %>
-      <%= text_field_tag :price_lower, params[:price_lower], class: "text_field" %>
-    </div>
-    <div class="container_form_details">
-      <%= label_tag :price_higher, t(".price_to") %>
-      <%= text_field_tag :price_higher, params[:price_higher], class: "text_field" %>
-    </div>
-    <div class="container_form_details">
-      <%= button_tag t(".search"), name: nil, class: "btn btn-success btn_search" %>
-    </div>
-  </div>
+<%= search_form_for(@searchs, url: admin_products_path, method: "get") do |f| %>
+  <%= f.label :name_cont, t(".name") %>
+  <%= f.text_field :name_cont, value: params[:name_cont], class: "form-control" %>
+  <%= f.label :price_gteq, t(".price_from") %>
+  <%= f.text_field :price_gteq, value: params[:price_gteq], class: "form-control" %>
+  <%= f.label :price_lteq, t(".price_to") %>
+  <%= f.text_field :price_lteq, value: params[:price_lteq], class: "form-control" %>
+  <%= f.label :category_id_eq, "Catgory"%>
+  <%= f.select :category_id_eq, category_options, {}, {prompt: params[:category_id_eq], class: "form-control"} %>
+  <%= f.submit "Search", class: "btn btn-success" %>
 <% end %>

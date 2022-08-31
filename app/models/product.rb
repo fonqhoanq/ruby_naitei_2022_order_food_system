@@ -19,8 +19,5 @@ class Product < ApplicationRecord
             format: {with: Settings.product.price_format},
             numericality: {greater_than: Settings.product.num_min,
                            less_than: Settings.product.num_max}
-  scope :filter_by_starts_with, ->(name){where("name like ?", "#{name}%")}
-  scope :filter_by_price_lower, ->(price_lower){where "price >= ?", price_lower}
-  scope :filter_by_price_higher, ->(price_higher){where "price <= ?", price_higher}
   scope :newest, ->{order(created_at: :desc)}
 end

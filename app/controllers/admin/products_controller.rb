@@ -2,17 +2,8 @@ class Admin::ProductsController < Admin::BaseController
   before_action :find_product_by_id, except: %i(index new create)
 
   def index
-    if params
-      @products = Product
-      filtering_params(params).each do |key, value|
-        if value.present?
-          @products = @products.public_send("filter_by_#{key}", value)
-        end
-      end
-    else
-      @products = Product.all
-    end
-    @pagy, @products = pagy @products.newest, items: Settings.pagy.item_5
+    @searchs = Product.ransack(params[:q])
+    @pagy, @products = pagy @searchs.result.newest, items: Settings.pagy.item_5
   end
 
   def show; end

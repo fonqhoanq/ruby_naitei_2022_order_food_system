@@ -2,7 +2,8 @@ class Admin::OrdersController < Admin::BaseController
   before_action :find_order_by_id, except: %i(index)
 
   def index
-    @pagy, @orders = pagy Order.all.newest, items: Settings.pagy.item_9
+    @searchs = Order.ransack(params[:q])
+    @pagy, @orders = pagy @searchs.result.newest, items: Settings.pagy.item_5
   end
 
   def edit; end

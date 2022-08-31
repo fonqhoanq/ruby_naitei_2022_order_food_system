@@ -8,4 +8,10 @@ module Admin::OrdersHelper
       content_tag(:span, I18n.t("admin.orders.order.paid"), class: ["badge", "badge-paid"])
     end
   end
+
+  def order_status_options
+    Order.statuses.map do |status|
+      status
+    end.unshift(["all", ""])
+  end
 end
